@@ -1,1 +1,8 @@
-
+---
+layout: default
+title: Matúš Gáspár, Študent
+---
+<div class="blurb">
+	<h1>Hi, I'm Matúš!</h1>
+	<p>FIIT STU<em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+</div><!-- /.blurb -->
