@@ -1,3 +1,4 @@
 name: Matúš Gáspár, My website
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+email: mg-24@azet.sk
