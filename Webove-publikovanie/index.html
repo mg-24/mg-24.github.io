@@ -3,7 +3,13 @@ layout: default
 title: Zadania
 ---
 <div class="blurb">
-	<a href="http://mg-24.github.io/"><h2>Zadanie1</h2></a>
-	<h1>Hi, I'm Matúš!</h1>
-	<p>FIIT STU<em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+	<ul>
+{% for zadanie in site.data.zadania %}
+  <li>
+    <a href="http://mg-24.github.io/">
+      {{ zadanie.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
 </div><!-- /.blurb -->
