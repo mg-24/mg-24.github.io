@@ -8,13 +8,17 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li{
     display: inline;
-    margin-right: 20px;
+    margin-left: 40px;
+}
+footer ul li {
+    display: inline;
+    margin-right: 40px;
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #976;
 }
 a:hover {
     text-decoration: underline;
