@@ -2,8 +2,16 @@
 layout: pingpong
 ---
 <div id="blurb">
-<div id="wb_YouTube2" style="position:absolute;left:211px;top:100px;width:549px;height:308px;z-index:1;">
-<iframe id="YouTube2" src="https://www.youtube.com/embed/bcudCvg7CL8?rel=1&amp;autoplay=1&amp;autohide=0"></iframe></div>
-<div id="wb_Shape1" style="position:absolute;left:476px;top:445px;width:19px;height:169px;z-index:2;">
-<img src="/img0001.png" id="Shape1" alt="" style="width:19px;height:169px;"></div>
+
+<ul class="posts">
+	<h1> Ladislav Gáspár </h1>
+	<div class="thumbnail">
+         <a href="/pingpong/oci.JPG"><img alt="" src="/pingpong/oci.JPG" height="240" width="290"></a>
+      </div>
+	<p> Môj otec je paralympijský víťaz v stolnom tenise v roku 2004 v Aténach. <p>
+	
+	  {% for post in site.posts %}
+	    <li>Stolno-tenisové video » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
 </div>

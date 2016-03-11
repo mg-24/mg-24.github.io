@@ -1,12 +1,21 @@
 ---
-layout: default
+layout: cv
 title: Životopis
 ---
 	<h1>{{ page.title }}</h1>
-	<p> Curriculum vitae.<p>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+	<h2 style="position:absolute;right:10px;top:1000px;">{{ site.time}}</h2>
+	:ambulance:
+	:mobile_phone_off:
+	<p>:mobile_phone_off:<p>
+	<img alt="" src="/cv/foto.JPG" style="position:absolute;left:10px;top:180px;">
+<div class="blurb">
+	<ul>
+{% for udaj in site.data.cv %}
+  <li>
+    <!--a href="http://mg-24.github.io/"-->
+      <h2>{{ udaj.name }}</h2>
+    </a>
+  </li>
+{% endfor %}
+</ul>
+</div><!-- /.blurb -->

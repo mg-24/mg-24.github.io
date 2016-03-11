@@ -1,4 +1,5 @@
 name: Matúš Gáspár, My website
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /pingpong/:year/
 email: astraltravel007@gmail.com
+gems: ["emoji_for_jekyll"]
