@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
 	background: #F0F0F0;
-	background-image: url("autumn.JPG");
+	background-image: url("/autumn.JPG");
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
