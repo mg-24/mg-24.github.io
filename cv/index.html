@@ -2,20 +2,107 @@
 layout: cv
 title: Životopis
 ---
-	<h1>{{ page.title }}</h1>
-	<h2 style="position:absolute;right:10px;top:1000px;">{{ site.time}}</h2>
-	:ambulance:
-	:mobile_phone_off:
-	<p>:mobile_phone_off:<p>
-	<img alt="" src="/cv/foto.JPG" style="position:absolute;left:10px;top:180px;">
-<div class="blurb">
-	<ul>
+<h1>{{ page.title }}</h1>
+	<!--h2 style="position:absolute;right:10px;top:1000px;">{{ site.time}}</h2-->
+	<div class="zaklad">
+		<img alt="" src="/cv/foto.JPG" style="position:absolute;left:10px;top:180px;">
+	</div>
+<div class="udaje">
+<ul>
 {% for udaj in site.data.cv %}
-  <li>
+  
     <!--a href="http://mg-24.github.io/"-->
-      <h2>{{ udaj.name }}</h2>
-    </a>
-  </li>
+	{% if udaj.name == "Osobné údaje" %}
+      <h2 style="position:absolute;left:10px;top:350px;">{{ udaj.name }}</h2>
+		<img src="/cv/ciara.png" id="Line1" alt="" style="position:absolute;left:10px;top:440px;">
+		<p style="position:absolute;left:10px;top:450px;">
+		:guardsman: Meno a priezvisko: Matúš Gáspár
+		<br>
+		:email: Email: <a href="mailto:astraltravel007@gmail.com">{{site.email}}</a>
+		<br>
+		:baby: Rok narodenia: 29.4.1994
+		<br>
+		:house: Adresa: A.Sipossa 24, 93601 Šahy
+		<br>
+		:car: Vodičský preukaz typu: B
+		</p>
+	  
+	 {% elsif udaj.name == "Vzdelanie" %}
+	  <h2 style="position:absolute;left:10px;top:700px;">{{ udaj.name }}</h2>
+		  <img src="/cv/ciara.png" id="Line1" alt="" style="position:absolute;left:10px;top:790px;">
+		  <p style="position:absolute;left:10px;top:800px;">
+		  <h3 style="position:absolute;left:10px;top:800px;"><U>2013-súčasnosť: </U>Fakulta informatiky a informačných a komunikačních technológií v Bratislave(STU)
+			  <br>
+			  <U>Odbor:</U> Informatika
+			  <br>
+			  <br>
+			  <U>2009 - 2013:</U> Gymnázium, Mládežnícka 22, Šahy
+			  <br>
+			  <U>Typ:</U> všeobecné gymnázium
+			  <br>
+			  <br>
+			  <U>Doplňujúce informácie o vzdelaní:</U> Vyštudoval som prvý stupeň ZUŠ v Šahách v hre na gitare.
+			  </h3>
+		  </p>
+	 {% elsif udaj.name == "Znalosti" %}
+	  <h2 style="position:absolute;left:10px;top:1080px;">{{ udaj.name }}</h2>
+		  <img src="/cv/ciara.png" id="Line1" alt="" style="position:absolute;left:10px;top:1170px;">
+		  <ul>
+		  {% for others in site.data.cv %}
+		  {% if others.other == "Kurzy a školenia" %}
+		  <p style="position:absolute;left:10px;top:1180px;" ><B><I>{{others.other}}:</I></B>
+		  <br>
+				Vlastním európsky vodičský preukaz na počítače ECDL.
+		  </p>
+		  {% elsif others.other == "Priebeh zamestnaní" %}
+		  <p style="position:absolute;left:10px;top:1260px;"><B><I>{{others.other}}:</I></B>
+		  <br>
+				Brigádoval som v rôznych firmách, kde som bol či už skladník alebo pracovník. Programovaniu
+				sa venujem aktívne, vytváram projekty a spĺňam zadania na vysokej škole STU.
+
+		  </p>
+		  <h3 style="position:absolute;left:10px;top:1400px;">
+		  <U><B><I>Jazykové znalosti:</I></B></U>
+			<li> Slovenský jazyk - materinský jazyk</li>
+			<li>Maďarský jazyk - mierne pokročilý</li>
+			<li>Anglický jazyk - aktívne</li>
+			<li>Nemecký jazyk - základy</li>
+			<li>Český jazyk - základy</li>
+			
+			<U><B><I>Administratívne a
+			ekonomické znalosti:</I></B></U>
+			<li>Strojopis- základy</li>
+			<li><U><B><I>Počítačové znalosti -
+			Používateľ:</I></B></U></li>
+			<li>Microsoft Excel - pokročilý</li>
+			<li>Microsoft PowerPoint - pokročilý</li>
+			<li>Microsoft Word - pokročilý</li>
+			<li>Microsoft Access - základy</li>
+			<li>Microsoft Windows - pokročilý</li>
+			<li>UNIX/Linux - základy</li>
+			<U><B><I>Počítačové znalosti -
+			Programátor:</I></B></U>
+			<li>C - pokročilý</li>
+			<li>Java - pokročilý</li>
+			<li>Python - základy</li>
+			<li>Pascal - základy</li>
+			<li>SQL - pokročilý</li>
+			<li>UML - pokročilý</li>
+			<li>HTML - základy</li>
+			<li>PostgreSQL - pokročilý</li>
+			<li>MySQL - základy</li>
+			<li>Administrácia UNIX/Linux - základy</li>
+			<li>Klient/server administrácia - základy</li>
+			<li>Administrácia Microsoft SQL Server - základy</li>
+			<li>Administrácia MySQL - základy</li>
+				
+		  </h3>
+			{% endif %}
+		  {% endfor %}
+	  </ul>
+    <!--/a-->
+	{% endif %}
+
 {% endfor %}
 </ul>
 </div><!-- /.blurb -->
