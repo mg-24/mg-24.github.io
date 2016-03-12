@@ -13,6 +13,7 @@ title: Zadania
     	<a href="/Webove-sidla"> 
       <h2>{{ zadanie.name }}</h2>
     </a>
+    {% endif %}
   </li>
 {% endfor %}
 {% assign wordCount = page.content | number_of_words %}
