@@ -1,6 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background: #F0F0F0;
 	background-image: url("/css/rain.jpg");
 }
 nav ul, footer ul {
