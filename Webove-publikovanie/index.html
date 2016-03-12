@@ -6,7 +6,11 @@ title: Zadania
 	<ul>
 {% for zadanie in site.data.zadania %}
   <li>
-    <a href="{{site.projekt}}">
+    {% if zadanie.name == "Zadanie 1 - Statické webové sídla"%}<a href="{{site.projekt}}">
+    	<h2>{{ zadanie.name }}</h2>
+    	</a>
+    	{ %else% }
+    	<a href="/Webove-sidla"> 
       <h2>{{ zadanie.name }}</h2>
     </a>
   </li>
