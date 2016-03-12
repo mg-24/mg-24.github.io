@@ -1,0 +1,53 @@
+/*body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}*/
+#YouTube1
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#YouTube2
+{
+   border-width: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Shape1
+{
+   border-width: 0;
+   -webkit-animation: vanish-in 500ms linear 7ms infinite normal;
+   -moz-animation: vanish-in 500ms linear 7ms infinite normal;
+   animation: vanish-in 500ms linear 7ms infinite normal;
+}
+#Line1
+{
+   border-width: 0;
+   height: 97px;
+   width: 73px;
+}
+#Line1
+{
+   -webkit-animation: magic-in 500ms linear 0ms infinite normal;
+   -moz-animation: magic-in 500ms linear 0ms infinite normal;
+   animation: magic-in 500ms linear 0ms infinite normal;
+}
+#Shape2
+{
+   border-width: 0;
+   -webkit-animation: vanish-in 500ms linear 7ms infinite normal;
+   -moz-animation: vanish-in 500ms linear 7ms infinite normal;
+   animation: vanish-in 500ms linear 7ms infinite normal;
+}
