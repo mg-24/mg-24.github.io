@@ -1,12 +1,40 @@
 ---
 layout: blog
-title: Záľuby
+title: Filmy a záľuby
 ---
-	<h1>{{ page.title }}</h1>
-	<p> Hrám súťažne stolný tenis, 3.ligu mužov. Hrám taktiež aj na gitare. Baví ma posilovanie. <p>
-	<!--ul class="posts">
+<h1>{{ page.title }}</h1>
+	<p> Hrám súťažne stolný tenis, 3.ligu mužov. Viac o pingpongu <a href="/pingpong">tu</a>.
+	<br>
+	 :guitar: Hrám taktiež aj na gitare. 
+	 <br>
+	 :muscle: Baví ma posilňovanie.<p>
+	<p> Rád pozerám rôzne filmy, seriály a tu su moje obľúbené: </p>
+	
+	<div class="blurb">
+	{% for each in site.data.movie %}
+  <h2>{% if each.title %} {{each.title}} {% endif %}<h2>
+  <h3>{% if each.director %}{{ each.title }}<u> Režisér:</u> {{ each.director }} {% endif %}</h3>
+  <h3>{% if each.Oscars %}<u>Počet Oskarov:</u> {{ each.Oscars }} {% endif %}</h3>
+  <h3><u>{% if each.actors %}Herci:{% endif %}</u>
+  {% for actor in each.actors %}
+    {{ actor.name }}
+	&nbsp
+    
+  {% endfor %}
+  </h3>
+	<ul>
+      {% if each.duration %}<li><font size="5">Film trvá: {{each.duration}}</font></li>{% endif %}
+    </ul>
+	<p> {% if each.comment %} {{each.comment}} {%endif%}</p>
+	
+{% endfor %}
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul-->
+{% assign wordCount = page.content | number_of_words %}
+{% if wordCount > 250 %} 
+<h3>{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+{% else %}
+<h3> Prečítať stránku trvá pár sekúnd. </h3>
+{% endif %}
+
+</div>
+	

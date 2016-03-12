@@ -11,7 +11,6 @@ title: Životopis
 <ul>
 {% for udaj in site.data.cv %}
   
-    <!--a href="http://mg-24.github.io/"-->
 	{% if udaj.name == "Osobné údaje" %}
       <h2 style="position:absolute;left:10px;top:350px;">{{ udaj.name }}</h2>
 		<img src="/cv/ciara.png" id="Line1" alt="" style="position:absolute;left:10px;top:440px;">
@@ -104,5 +103,11 @@ title: Životopis
 	{% endif %}
 
 {% endfor %}
+{% assign wordCount = page.content | number_of_words %}
+{% if wordCount > 250 %} 
+<h3>{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+{% else %}
+<h3> Prečítať stránku trvá pár sekúnd. </h3>
+{% endif %}
 </ul>
 </div><!-- /.blurb -->

@@ -1,0 +1,29 @@
+---
+layout: blog
+title: Záľuby
+---
+	<h1>{{ page.title }}</h1>
+	<div class="film">
+	<p> Hrám súťažne stolný tenis, 3.ligu mužov. Hrám taktiež aj na gitare. Baví ma posilovanie. <p>
+	{% for album in site.film.movie %}
+  <h2>{{ album.title }}</h2>
+  <p>Performed by{{ album.artist }}{% if album.director %}, directed by {{ album.director }}{% endif %}</p>
+  {% for work in album.works %}
+    <h3>{{ work.title }}</h3>
+    <p>Composed by {{ work.composer }}</p>
+    <ul>
+    {% for track in work.tracks %}
+      <li>{{ track.title }} ({{ track.duration }})</li>
+    {% endfor %}
+    </ul>
+  {% endfor %}
+{% endfor %}
+
+	{% assign wordCount = page.content | number_of_words %}
+	{% if wordCount > 250 %} 
+	<h3>{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+	{% else %}
+	<h3> Prečítať stránku trvá pár sekúnd. </h3>
+	{% endif %}
+</div>
+	

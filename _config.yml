@@ -2,4 +2,6 @@ name: Matúš Gáspár, My website
 markdown: kramdown
 permalink: /pingpong/:year/
 email: astraltravel007@gmail.com
+github: https://github.com/mg-24/mg-24.github.io
+projekt: https://mg-24.github.io/
 gems: ["emoji_for_jekyll"]

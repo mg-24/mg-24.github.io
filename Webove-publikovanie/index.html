@@ -6,10 +6,16 @@ title: Zadania
 	<ul>
 {% for zadanie in site.data.zadania %}
   <li>
-    <a href="http://mg-24.github.io/">
+    <a href="{{site.projekt}}">
       <h2>{{ zadanie.name }}</h2>
     </a>
   </li>
 {% endfor %}
+{% assign wordCount = page.content | number_of_words %}
+{% if wordCount > 250 %} 
+<h3>{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+{% else %}
+<h3> Prečítať stránku trvá pár sekúnd. </h3>
+{% endif %}
 </ul>
 </div><!-- /.blurb -->

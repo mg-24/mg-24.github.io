@@ -1,9 +1,54 @@
 ---
 layout: skola
-<!--title: Matúš Gáspár, Študent -->
+title: Znalosti, projekty
 ---
 <div class="blurb">
-	<h1>Hi, I'm Matúš!</h1>
-	<p>Študent FIIT STU!</p>
+	<h1>{{page.title}}</h1>
+	<p>Venujem sa hlavne programovaniu, kde z programovacích jazykov najlepšie ovládam Javu a C.
+		<br>
+		<br>
+		Operačné systémy ovládam na úrovni shellov-ských príkazov (bash).
+		Taktiež sa učím assembler. 
+		{% comment %}
+		Bakalárku zatiaľ nemám dokončenú, preto ju sem nedávam.
+		{% endcomment %}
+		<br>
+		<br>
+		Počítačové a komunikačné siete ovládam na úrovni tvorby sieťových analyzátorov, tvorby
+		komunikátora klient/server, poznám základnú architektúru LAN a WAN - vytvoril som
+		jednoduchý sieťový analyzátor na princíp WireShark-u a komunikátor klient/server cez UDP
+		protokol.
+		<br>
+		<br>
+		Databázové systémy ovládam na úrovni SQL príkazov - PostgreSQL a MySQL + Java a taktiež
+		ovládam aj objektovo-relačné mapovanie.
+		<br>
+		<br>
+		Softvérové inžinierstvo ovládam na úrovni tvorby UML diagramov - v rámci predmetu sme tvorili
+		rozsiahli projekt, kde som využil asi 7-9 UML diagramov v CASE nájstroji Enterprise Architect.
+		<br>
+		<br>
+		Mám základy manažérskej ekonómie na teoretickej úrovni a taktiež informačnej bezpečnosti na
+		teoretickej úrovni.
+		<br>
+		<br>
+		Základy mám aj v oblasti počítačovej grafiky, teda tvorba filtrov v obrázkoch pomocou matíc a
+		jednoduchej 3D hry s kamerou v jazyku C/C++.
+		<br>
+		<br>
+		Mám základy a taktiež praktické skúsenosti v oblasti umelej inteligencie ako sú rôzne formy
+		prehľadávania stavového priestoru, strojového učenia sa - genetické a evolučné algoritmy.
+		V jazyku C ovládam dátové štruktúry ako sú binárne vyhľadávacie stromy (avl stromy), zásobník,
+		grafové algoritmy (Kruskalov algoritmus, Dijsktrov algoritmus), hashovacie tabuľky. Všetko zo
+		spomínaných som programoval v jazyku C. Viem určit taktiež zložitosť programu - pamäťovú aj
+		časovú.
+				
+	</p>
+	{% assign wordCount = page.content | number_of_words %}
+	{% if wordCount > 250 %} 
+	<h3>{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+	{% else %}
+	<h3> Prečítať stránku trvá pár sekúnd. </h3>
+	{% endif %}
 	
 </div><!-- /.blurb -->

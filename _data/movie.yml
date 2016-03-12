@@ -1,0 +1,44 @@
+- title: "1. Inception - 2010"
+- director: "Christopher Nolan"
+- Oscars: "4"
+- actors:
+  - name: "Leonardo Di Caprio"
+  - name: "Tom Hardy"
+  - name: "Joseph Gordon Lewitt"
+  - name: "Ellen Page"
+- duration: "2hod. 28min."
+- comment: "Jeden z mojich obľúbených filmoch o lucidnom snívaní. Diváka privedie do 3 úrovní 'snow vo sne' a čas sa začne vnímať inak."
+
+- title: "2. Interstellar - 2014"
+- director: "Christopher Nolan"
+- Oscars: "1"
+- actors:
+  - name: "Matthew McConaughey"
+  - name: "Anne Hathaway"
+  - name: "Jessica Chastain"
+  - name: "John Lithgow"
+- duration: "2hod. 49min."
+- comment: "Film, ktorý pomotá hlavnu nejdému divákovi, kde sa Matthew dostáva do vesmíra a prechádza červiou dierou. Niekoľko minút vo vesmíra znamená
+niekoľko rokov na našej Zemi!"
+
+- title: "3. The Prestige - 2006"
+- director: "Christopher Nolan"
+- Oscars: "0 -> 2 Nominácie"
+- actors:
+  - name: "Christian Bale"
+  - name: "Hugh Jackman"
+  - name: "Michael Caine"
+  - name: "Scarlett Johansson"
+- duration: "2hod. 10min."
+- comment: "Film o kúzlach, vzťahoch a sláve. Vynikajúci. Celý čas drží diváka v napätí a divák až na konci zistí čo sa vlastne naozaj deje."
+
+- title: "4. Jurassic Park - 1993"
+- director: "Steven Spielberg"
+- Oscars: "3"
+- actors:
+  - name: "Sam Neill"
+  - name: "Laura Dern"
+  - name: "Jeff Goldblum"
+  - name: "Richard Attenborough"
+- duration: "2hod. 7min."
+- comment: "Sci-fi film Spielberga. Čo môžme čakať od tak veľkolepého režiséra? Snáď len toľko, že na ten rok graficky vynikájuco spracované a nádherné."

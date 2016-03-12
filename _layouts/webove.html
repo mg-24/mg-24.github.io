@@ -3,7 +3,9 @@
 	<head>
 		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/web.css">
+		<link href="/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/css/index.css" rel="stylesheet">
 	</head>
 	<body>
 		<nav>
@@ -27,14 +29,11 @@
 		</div><!-- /.container -->
 		
 		<ul id="Pagination1">
-		<li class="disabled" style="position:absolute;left:10px;top:400px;"><a href="/pingpong">&laquo; Prev</a></li>
+		<li class="disabled" style="position:absolute;left:10px;top:400px;"><font size="6"><a href="/pingpong">&laquo; Späť</a></font></li>
 	
 		
 		<footer>
-    		<ul>
-        		<li><a href="mailto:astraltravel007@gmail.com">{{site.email}}</a></li>
-        		<li><a href="https://github.com/mg-24">GiThub - profil</a></li>
-			</ul>
+    		{% include footer.html %}
 		</footer>
 	</body>
 </html>

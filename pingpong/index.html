@@ -11,7 +11,13 @@ layout: pingpong
 	<p> Môj otec je paralympijský víťaz v stolnom tenise v roku 2004 v Aténach. </p>
 	
 	  {% for post in site.posts %}
-	    <li>Stolno-tenisové video » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <li>Pokračuj na blog» <a href="{{ post.url }}" title="{{ post.title }}"><b>{{ post.title }}</b></a></li>
 	  {% endfor %}
 	</ul>
+	{% assign wordCount = page.content | number_of_words %}
+	{% if wordCount > 250 %} 
+	<h3>{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+	{% else %}
+	<h3> Prečítať stránku trvá pár sekúnd. </h3>
+	{% endif %}
 </div>
