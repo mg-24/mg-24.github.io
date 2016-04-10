@@ -12,7 +12,7 @@ title: Stolný tenis
 	<p> Môj otec je paralympijský víťaz v stolnom tenise v roku 2004 v Aténach. </p>
 	
 	  {% for post in site.posts %}
-	    <li>Pokračuj na blog» <a href="{{ post.url }}" title="{{ post.title }}"><b>{{ post.title }}</b></a></li>
+	  <li>Pokračuj na blog» <a href="{{ post.url }}" title="{{ post.title }}"><b>{{ post.title }}</b></a></li>
 	  {% endfor %}
 	</ul>
 	{% assign wordCount = page.content | number_of_words %}

@@ -1,0 +1,68 @@
+---
+layout: zadania
+title: Zadania
+---
+<div class="blurb">
+	<ul>
+	<h1>Zadanie2 - Docbook</h1>
+	<p>V zadaní 2, v ktorom sme mali vytvoriť dokument v Docbooku-u, som použil svoju bakalársku prácu.
+	Využil som predpripravenú šablónu zo stránky predmetu.<br><br>
+	Dokument je štandardne členený na <b>kapitolu</b> "&lt;chapter&gt;" , <b>podkapitolu</b> "&lt;section&gt;" a taktiež <b>podpodkapitolu</b>, <b>prílohu</b>
+	"&lt;appendix&gt;", v ktorej som využil atribút "id", aby som sa v dokumente vedel odkazovať na prílohu. <b>Odkazy na prílohu a iné časti</b>
+	dokumentu som urobil pomocou link "&lt;linkend=""&gt;", kde "linkend" slúži na vloženie id kam sa chcem odkázať. <b>Odkazy na literatúru</b> som
+	vytvoril pomocou "&lt;xref linkend=""&gt;". V literatúre sa nachádzajú <b>odkazy na url</b> "&lt;ulink
+    url="url stránky"&gt;". <br><br>
+	Na <b>obe anotácie</b> som využil "&lt;abstract&gt;". 
+	Úvodne strany obsahujú tagy ako "&lt;author&gt;" - autor, "&lt;pubdate&gt;" - dátum bakalárky, "&lt;othername&gt;" - iné mená, 
+	názvy (podľa atribútu "role"), "&lt;affiliation&gt;" - záhlavie. <br><br>
+	<b>Obsah, zoznam tabuliek a zoznam obrázkov</b> je generovaný pomocou <i>generate.toc</i> v .xsl súbore.
+	Slová, ktoré boli anglické alebo nejaké skratky som písal kurzívou pomocou "&lt;emphasis&gt;", taktiež sú odkazy na literatúru či prílohy
+	zvýraznené "&lt;emphasis role="bold"&gt;".<br><br>
+	Kapitoly a podkapitoly sú očíslované. Taktiež mám vytvorené aj <b>členenie v odrážkach</b> "&lt;itemizedlist mark='opencircle'&gt;"
+	"&lt;listitem override='bullet'&gt;".<br><br>
+	<b>Poznámku pod čiarou</b> som využil a vytvoril som ju pomocou "&lt;footnote&gt;", ktorý obsahoval text, aký sa má v poznámke vypísať a tento tag bol
+	umiestnený hneď za slovom, na ktoré sa poznámka pod čiarou vzťahuje.<br>
+	<br><b>Obrázky</b> som vložil pomocou "&lt;figure id="obr1"&gt;"
+					"&lt;imageobject&gt;"
+					"&lt;imagedata fileref="cesta" format="formát" width="šírka"&gt;".
+	Tabuľku som vytvoril "&lt;table frame='all' id="tab1"&gt;"
+			"&lt;tgroup cols='5'&gt;"
+			"&lt;tbody&gt;"
+			"&lt;row&gt;", kde row je riadok , cols je počet stĺpcov.
+	<b>Obrázky a aj tabuľky</b> obsahujú atribút "id", aby som sa na ne vedel v texte odkázať.<br><br>
+	<b>Index pojmov</b> som vytvoril pomocou "&lt;indexterm&gt;"
+		"&lt;primary&gt;" primárny index
+		"&lt;secondary&gt;" sekundárny index.<br><br>
+	<b>V prílohách</b> som využil "&lt;programlisting&gt;", pomocou ktorého som zapísal pseudokód.
+	</p>
+	<h2>Úprava xsl súborov</h2>
+	<p>Zmenil som typ písma v dokumente na Times New Roman a taktiež veľkosť písma na kapitály pomocou "uppercase" pri anotáciách.<br><br>
+	Upravil som  úvodnú stranu, pridal som fo:block na zobrazenie študijného programu, autora, dátumu publikácie, mena vedúceho atď...<br>
+	Strany oboch anotácii sú upravené, aby vyzerali tak, ako v mojej pôvodnej bakalárke. Keďže tam mám aj záhlavia, musel som vytvoriť nový xsl template
+	aby sa zobrazovala slovenská anotácia a potom template pre anglickú anotáciu.</p>
+
+
+<h2>Niektoré ukážky zmien xsl</h2>
+<div id="wb_PhotoGallery1" style="position:absolute;left:213px;top:107px;width:507px;height:197px;z-index:1;">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+		<h3 style="position:absolute;left:0px;top:1690px;">1.Ukážka aplikovania xsl template-u na abstrakty: anotácia, annotation, a ostatné teda poďakovanie a čestné prehlásenie</h3>
+         <a href="/fotky/abstrakt.JPG"><img alt="" src="/fotky/abstrakt.JPG" style="position:absolute;left:0px;top:1830px;" height="300" width="900"></a>
+      </div>
+      <div class="thumbnail">
+		<h3 style="position:absolute;left:0px;top:2120px;">2.Ukážka aplikovania xsl template-u anglickej anotácie</h3>
+         <a href="/fotky/template-annotation.JPG"><img alt="" src="/fotky/template-annotation.JPG" style="position:absolute;left:0px;top:2230px;"height="400" width="940"></a>
+      </div>
+   </div>
+   
+</div></div>
+</ul>
+
+{% assign wordCount = page.content | number_of_words %}
+{% if wordCount > 250 %} 
+<h3 style="position:absolute;left:200px;top:2800px;">{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+{% else %}
+<h3> Prečítať stránku trvá pár sekúnd. </h3>
+{% endif %}
+</div>
