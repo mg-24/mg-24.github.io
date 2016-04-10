@@ -7,4 +7,3 @@ Otec hrával extraligu spolu s ďalšími. Dnes nemáme už ani halu v meste, ta
 jednoduchý, tak pre tých tu je video, ktoré ukazuje, že to je veľmi ťažký šport. Potrebné sú rýchle reakcie, kondička a **sústredenosť**.
 
 **Video s neskutočnými údermi stolných tenistov.**
-{% youtube bcudCvg7CL8 %}
