@@ -50,7 +50,7 @@ title: Zadanie3
 
 {% assign wordCount = page.content | number_of_words %}
 {% if wordCount > 250 %} 
-<h3 style="position:absolute;left:200px;top:2800px;">{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+<h3 style="position:absolute;left:200px;top:2000px;">{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
 {% else %}
 <h3> Prečítať stránku trvá pár sekúnd. </h3>
 {% endif %}
