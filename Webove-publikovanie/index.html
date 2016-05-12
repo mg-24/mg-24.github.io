@@ -19,6 +19,9 @@ title: Zadania
 		</a>    
   </li>
   {% endif %}
+  {% endfor %}
+  
+  {% for zadanie in site.data.zadanie3 %}	
   {% if zadanie.name == 'Zadanie3 - XML'%}
   <li>
 		
@@ -26,8 +29,8 @@ title: Zadania
 		</a>    
   </li>
   {% endif %}
+  {% endfor %}
   
-{% endfor %}
 </ul>
 </div><!-- /.blurb -->
 {% assign wordCount = page.content | number_of_words %}
