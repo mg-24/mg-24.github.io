@@ -1,0 +1,19 @@
+---
+layout: zadania
+title: Zadania
+---
+<div class="blurb">
+	<ul>
+	<h1>Zadanie3 - XML prezentácia</h1>
+	<p>V zadaní 3, v ktorom sme mali vytvoriť prezentáciu v XML a transformovať ju do HTML a PDF, som použil svoju bakalársku prácu.
+	</p>
+</ul>
+</div>
+
+{% assign wordCount = page.content | number_of_words %}
+{% if wordCount > 250 %} 
+<h3 style="position:absolute;left:200px;top:2800px;">{{ wordCount | divided_by: 180 | append: " minút/minúty na prečítanie" }}</h3>
+{% else %}
+<h3> Prečítať stránku trvá pár sekúnd. </h3>
+{% endif %}
+</div>
