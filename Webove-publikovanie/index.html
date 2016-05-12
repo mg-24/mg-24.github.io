@@ -18,10 +18,11 @@ title: Zadania
     	<a href="/zadania"> <h2>{{ zadanie.name }}</h2>    
 		</a>    
   </li>
-  {% else if zadanie.name == 'Zadanie3'%}
+  {% endif %}
+  {% if zadanie.name == 'Zadanie3'%}
   <li>
 		
-    	<a href="/zadanie3/index.html"> <h2>{{ zadanie.name }}</h2>    
+    	<a href="/zadanie3"> <h2>{{ zadanie.name }}</h2>    
 		</a>    
   </li>
   {% endif %}
