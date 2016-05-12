@@ -6,6 +6,32 @@ title: Zadanie3
 	<ul>
 	<h1>Zadanie3 - XML prezentácia</h1>
 	<p>V zadaní 3, v ktorom sme mali vytvoriť prezentáciu v XML a transformovať ju do HTML a PDF, som použil svoju bakalársku prácu.
+	Využil som tieto elementy:
+	<li>&lt;presentation&gt; - je element, ktorý je začiatočný, ohraničuje celú prezentáciu, nevyhnutný a v sebe obsahuje ostatné spomínané elementy.</li>
+	<li>&lt;slide num="číslo"&gtt; - je element, ktorý hovorí o začiatku novo vytvoreného slajdu v prezentácii. 
+	Má atribút num, ktorý je identifikátorom daného slajdu a obsahuje nejaké číslo od 1. Týchto elementov môže byť 1 a viac.
+	</li>
+	<li>&lt;title type="typ"&gt; - je element, ktorý hovorí o nadpise. Obsahuje atribút type, kde sa zadá určitý typ nadpisu. 
+	Typ môže byť main alebo slide. Typ main slúži pre prvú stranu slajdu, úvodnú a typ slide pre nadpisy na slajdoch. 
+	Môže byť 0 alebo viac nadpisov. Je možné meniť veľkosť písma a farbu.
+	</li>
+	<li>&lt;subtitle type="typ"&gt;</li> - je element, ktorý hovorí o podnadpise. Obsahuje atribút type, kde sa zadá určitý typ podnadpisu. Typ môže byť main alebo slide.  Typ main slúži pre prvú stranu slajdu, úvodnú a typ slide pre podnadpisy na slajdoch. Môže mať v sebe element &lt;align type="center"&gt;, ktorý zarovná podnadpis na stred.
+	<li>&lt;name&gt; - je element, ktorý môže alebo nemusí byť prítomný a obsahuje meno autora prezentácie.</li>
+	<li>&lt;supervisor&gt; - je element, ktorý môže alebo nemusí byť prítomný a obsahuje meno vedúceho nejaké projektu.</li>
+	<li>&lt;obsah&gt; - je element, ktorý vygeneruje číslovaný a klikateľný obsah na danej strane, kde je použitý.</li>
+	<li>&lt;text&gt; - je element, ktorý slúži na písanie textu na slajdy. Môže byť nastavená veľkosť písma. 
+	Ostatné ako farba, zarovnanie alebo tučné písmo, či kurzíva sa nastavuje pomocou špecifických elementov opísaných nižšie.</li>
+	<li>&lt;points&gt; - je element, ktorý ohraničuje rôzny počet elementov &lt;point&gt;. Element &lt;point&gt; umožňuje písať text v odrážkach.
+	Je možné nastaviť veľkosť písma. Ostatné ako farba, zarovnanie alebo tučné písmo, či kurzíva sa nastavuje pomocou špecifických elementov opísaných nižšie.</li>
+	<li>&lt;rotate_text&gt; - je element, ktorý ohraničí text do obdĺžnika, ktorý je naklonený. Odporúčané je v ňom používať element &lt;text&gt;.</li>
+	<li>&lt;image align="smer zarovnania" width="veľkosť šírky" height="veľkosť výšky"&gt; - je element, 
+	ktorý umožňuje vložiť obrázok na slajd. Má atribúty align - smer zarovnania obrázku left, right, center; width - šírka obrázku; height - výška obrázku.</li>
+	<li>&lt;hr&gt; - je element, ktorý vytvorí čiaru, teda oddeľovač.</li>
+	<li>&lt;emphasis type="typ"&gt; - je element, ktorý zvýrazní text. Typ môže byť both, vtedy je text kurzíva aj bold; typ weight, 
+	vtedy je text iba bold; typ style, vtedy je text iba kurzíva.</li>
+	<li>&lt;color type="farba">&gt; - je element, ktorý farbe zvýrazní text. Farby môže byť: brown, red, green, black.</li>
+	<li>&lt;align type="zarovnanie"&gt; - je element, ktorý zarovná text istým smerom. Atribú type môže mať hodnoty: center, right, left.</li>
+
 	</p>
 </ul>
 
